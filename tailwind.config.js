@@ -21,6 +21,13 @@ export default {
         "Very-Pale-Blue": "hsl(225, 100%, 98%)",
         "Light-Grayish-Blue": "hsl(227, 47%, 96%)",
         "Dark-Grayish-Blue": "hsl(228, 12%, 44%)",
+      },
+      backgroundImage: {
+        "Toggle-Gradient": "linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%))",
+        "Instagram-Gradient": "linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%))"
+      },
+      fontFamily: {
+        Inter: ["Inter"]
       }
     },
   },
