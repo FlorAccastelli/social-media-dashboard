@@ -39,16 +39,16 @@ export const OverviewCard = ({ user, audience, audienceType, network, isUp, toda
 
 export const OverviewTodayCard = ({ network, statsType, stats, porcentage, isUp }) => {
     return (
-        <article>
-            <div>
-                <p>Likes</p>
-                <img src="" alt="" />
+        <article className='bg-Light-Grayish-Blue w-[326px] h-[125px] mb-4 mx-auto rounded-[5px] p-[27px] cursor-pointer hover:brightness-95 dark:bg-Dark-Desaturated-Blue hover:dark:brightness-125'>
+            <div className='flex items-center justify-between mb-[21px]'>
+                <p>{statsType}</p>
+                <img src={networkLogos[network]} alt="" />
             </div>
-            <div>
-                <p>5462</p>
+            <div className='flex justify-between'>
+                <p>{stats}</p>
                 <div className='flex items-center place-content-center gap-1'>
                 <img src={isUp ? iconUp : iconDown} alt="icon arrow" />
-                <p className={`text-xs font-bold ${isUp ? 'text-Lime-Green' : 'text-Bright-Red'}`}>{today} Today</p>
+                <p className={`text-xs font-bold ${isUp ? 'text-Lime-Green' : 'text-Bright-Red'}`}>{porcentage} Today</p>
             </div>
             </div>
         </article>
