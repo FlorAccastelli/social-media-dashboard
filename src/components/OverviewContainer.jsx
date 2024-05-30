@@ -3,7 +3,7 @@ import { OverviewCard } from './OverviewCard';
 
 export const OverviewContainer = () => {
     return (
-        <section>
+        <section className='w-[326px] absolute top-[191px] left-0 right-0 mx-auto'>
             {
                 data.overview.map(element => {
                     return <OverviewCard 
@@ -12,6 +12,8 @@ export const OverviewContainer = () => {
                     audience={element.audience}
                     audienceType={element.audienceType}
                     network={element.network}
+                    isUp={element.isUp}
+                    today={element.today}
                     />
                 })
             }
