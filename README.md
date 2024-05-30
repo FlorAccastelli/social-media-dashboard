@@ -1,5 +1,5 @@
 <div align="center">
-  <h1><img src="https://img.icons8.com/fluency/48/000000/social-media.png"/> Social Media Dashboard with Theme Switcher <img src="https://img.icons8.com/ios-filled/50/000000/night-mode-skin.png"/></h1>
+  <h1> Social Media Dashboard with Theme Switcher</h1>
 </div>
 
 Este proyecto es una solución al desafío Social media dashboard with theme switcher de Frontend Mentor. El desafío consiste en crear un dashboard de redes sociales con la capacidad de cambiar entre temas claros y oscuros.
