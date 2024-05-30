@@ -1,5 +1,5 @@
 import data from '../../data/data.json';
-import { OverviewCard } from './OverviewCard';
+import { OverviewCard, OverviewTodayCard } from './OverviewCard';
 
 export const OverviewContainer = () => {
 
@@ -14,19 +14,38 @@ export const OverviewContainer = () => {
     return (
         <section className='w-[326px] absolute top-[191px] left-0 right-0 mx-auto'>
             {
-                data.overview.map(element => {
+                data.overview.map(object => {
                     return <OverviewCard 
-                    key={element.id}
-                    user= {element.user}
-                    audience={convertNumberToK(element.audience)}
-                    audienceType={element.audienceType}
-                    network={element.network}
-                    isUp={element.isUp}
-                    today={element.today}
+                    key={object.id}
+                    user= {object.user}
+                    audience={convertNumberToK(object.audience)}
+                    audienceType={object.audienceType}
+                    network={object.network}
+                    isUp={object.isUp}
+                    today={object.today}
                     />
                 })
             }
         </section>
         
+    )
+}
+
+export const OverviewTodayContainer = () => {
+    return (
+        <div>
+            {
+                data['overview-today'].map(object => {
+                    return <OverviewTodayCard 
+                    key={object.id}
+                    network={object.network}
+                    statsType={object.statsType}
+                    stats={object.stats}
+                    porcentage={object.porcentage}
+                    isUp={object.isUp}
+                    />
+                })
+            }
+        </div>
     )
 }

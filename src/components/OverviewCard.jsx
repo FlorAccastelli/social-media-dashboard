@@ -36,3 +36,21 @@ export const OverviewCard = ({ user, audience, audienceType, network, isUp, toda
         </article>
     )
 }
+
+export const OverviewTodayCard = ({ network, statsType, stats, porcentage, isUp }) => {
+    return (
+        <article>
+            <div>
+                <p>Likes</p>
+                <img src="" alt="" />
+            </div>
+            <div>
+                <p>5462</p>
+                <div className='flex items-center place-content-center gap-1'>
+                <img src={isUp ? iconUp : iconDown} alt="icon arrow" />
+                <p className={`text-xs font-bold ${isUp ? 'text-Lime-Green' : 'text-Bright-Red'}`}>{today} Today</p>
+            </div>
+            </div>
+        </article>
+    )
+}
