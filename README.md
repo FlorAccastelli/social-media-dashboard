@@ -2,7 +2,7 @@
   <h1> Social Media Dashboard with Theme Switcher</h1>
 </div>
 
-Este proyecto es una solución al desafío Social media dashboard with theme switcher de Frontend Mentor. El desafío consiste en crear un dashboard de redes sociales con la capacidad de cambiar entre temas claros y oscuros.
+Cree un dashboard de redes sociales con la capacidad de cambiar entre temas claros y oscuros.
 
 ## Resumen
 
